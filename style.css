@@ -32,16 +32,16 @@
 	content: "\e020";
 }
 .icon-action-settings:before {
-	content: "\e0013";
+	content: "\e013";
 }
 .icon-action-search:before {
-	content: "\e0012";
+	content: "\e012";
 }
 .icon-action-help:before {
-	content: "\e003";
+	content: "\e011";
 }
 .icon-action-about:before {
-	content: "\e0010";
+	content: "\e010";
 }
 .icon-navigation-refresh:before {
 	content: "\e009";
@@ -62,7 +62,7 @@
 	content: "\e004";
 }
 .icon-navigation-cancel:before {
-	content: "\e0003";
+	content: "\e003";
 }
 .icon-navigation-back:before {
 	content: "\e001";
@@ -101,7 +101,7 @@
 	content: "\e082";
 }
 .icon-images-rotate-left:before {
-	content: "\e0081";
+	content: "\e081";
 }
 .icon-images-crop:before {
 	content: "\e080";
@@ -110,7 +110,7 @@
 	content: "\e073";
 }
 .icon-location-place:before {
-	content: "\e0072";
+	content: "\e072";
 }
 .icon-location-map:before {
 	content: "\e071";
@@ -131,7 +131,7 @@
 	content: "\e067";
 }
 .icon-social-person:before {
-	content: "\e0066";
+	content: "\e066";
 }
 .icon-social-group:before {
 	content: "\e065";
@@ -140,7 +140,7 @@
 	content: "\e064";
 }
 .icon-social-chat:before {
-	content: "\e0063";
+	content: "\e063";
 }
 .icon-social-cc-bcc:before {
 	content: "\e062";
@@ -233,7 +233,7 @@
 	content: "\e035";
 }
 .icon-collections-new-label:before {
-	content: "\e0034";
+	content: "\e034";
 }
 .icon-collections-labels:before {
 	content: "\e033";
@@ -251,7 +251,7 @@
 	content: "\e025";
 }
 .icon-rating-important:before {
-	content: "\e0024";
+	content: "\e024";
 }
 .icon-rating-half-important:before {
 	content: "\e023";
@@ -269,19 +269,19 @@
 	content: "\e0f6";
 }
 .icon-hardware-keyboard:before {
-	content: "\e00f5";
+	content: "\e0f5";
 }
 .icon-hardware-headset:before {
-	content: "\e00f4";
+	content: "\e0f4";
 }
 .icon-hardware-headphones:before {
-	content: "\e00f3";
+	content: "\e0f3";
 }
 .icon-hardware-gamepad:before {
-	content: "\e00f2";
+	content: "\e0f2";
 }
 .icon-hardware-dock:before {
-	content: "\e00f1";
+	content: "\e0f1";
 }
 .icon-hardware-computer:before {
 	content: "\e0f0";
