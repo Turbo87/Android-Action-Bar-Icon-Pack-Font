@@ -3,6 +3,11 @@ Android Action Bar Icon Pack Font
 
 Converted the offical Android Action Bar Icon Pack into an iconic webfont
 
+Demo
+----
+
+Visit <http://turbo87.github.com/Android-Action-Bar-Icon-Pack-Font/> for a live demo of the font
+
 Sources
 -------
 
