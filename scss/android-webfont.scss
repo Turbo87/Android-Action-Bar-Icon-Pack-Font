@@ -1,13 +1,17 @@
-@font-face {
-    font-family: 'Android-Action-Bar-Icon-Pack';
-    src:url('../fonts/Android-Action-Bar-Icon-Pack.eot');
-    src:url('../fonts/Android-Action-Bar-Icon-Pack.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Android-Action-Bar-Icon-Pack.svg#Android-Action-Bar-Icon-Pack') format('svg'),
-        url('../fonts/Android-Action-Bar-Icon-Pack.woff') format('woff'),
-        url('../fonts/Android-Action-Bar-Icon-Pack.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "compass/css3/font-face";
+
+@include font-face(
+    'Android-Action-Bar-Icon-Pack',
+    font-files(
+        'Android-Action-Bar-Icon-Pack.eot',
+        'Android-Action-Bar-Icon-Pack.svg',
+        'Android-Action-Bar-Icon-Pack.ttf',
+        'Android-Action-Bar-Icon-Pack.woff'
+    ),
+    'Android-Action-Bar-Icon-Pack.eot',
+    normal,
+    normal
+);
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
