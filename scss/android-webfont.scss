@@ -38,435 +38,165 @@ $font-name: 'Android-Action-Bar-Icon-Pack';
     -webkit-font-smoothing: antialiased;
 }
 
-@mixin icon-content($char) {
-    &:before {
-        content: $char;
-    }
-}
+// Icons list
+$icons:
+    icon-navigation-back $icon-navigation-back,
+    icon-navigation-accept $icon-navigation-accept,
+    icon-navigation-cancel $icon-navigation-cancel,
+    icon-navigation-collapse $icon-navigation-collapse,
+    icon-navigation-expand $icon-navigation-expand,
+    icon-navigation-forward $icon-navigation-forward,
+    icon-navigation-next-item $icon-navigation-next-item,
+    icon-navigation-previous-item $icon-navigation-previous-item,
+    icon-navigation-refresh $icon-navigation-refresh,
 
-.icon-navigation-back {
-    @include icon-content($icon-navigation-back);
-}
-.icon-navigation-accept {
-    @include icon-content($icon-navigation-accept);
-}
-.icon-navigation-cancel {
-    @include icon-content($icon-navigation-cancel);
-}
-.icon-navigation-collapse {
-    @include icon-content($icon-navigation-collapse);
-}
-.icon-navigation-expand {
-    @include icon-content($icon-navigation-expand);
-}
-.icon-navigation-forward {
-    @include icon-content($icon-navigation-forward);
-}
-.icon-navigation-next-item {
-    @include icon-content($icon-navigation-next-item);
-}
-.icon-navigation-previous-item {
-    @include icon-content($icon-navigation-previous-item);
-}
-.icon-navigation-refresh {
-    @include icon-content($icon-navigation-refresh);
-}
-.icon-action-about {
-    @include icon-content($icon-action-about);
-}
-.icon-action-help {
-    @include icon-content($icon-action-help);
-}
-.icon-action-search {
-    @include icon-content($icon-action-search);
-}
-.icon-action-settings {
-    @include icon-content($icon-action-settings);
-}
-.icon-rating-bad {
-    @include icon-content($icon-rating-bad);
-}
-.icon-rating-favorite {
-    @include icon-content($icon-rating-favorite);
-}
-.icon-rating-good {
-    @include icon-content($icon-rating-good);
-}
-.icon-rating-half-important {
-    @include icon-content($icon-rating-half-important);
-}
-.icon-rating-important {
-    @include icon-content($icon-rating-important);
-}
-.icon-rating-not-important {
-    @include icon-content($icon-rating-not-important);
-}
-.icon-collections-cloud {
-    @include icon-content($icon-collections-cloud);
-}
-.icon-collections-collection {
-    @include icon-content($icon-collections-collection);
-}
-.icon-collections-go-to-today {
-    @include icon-content($icon-collections-go-to-today);
-}
-.icon-collections-labels {
-    @include icon-content($icon-collections-labels);
-}
-.icon-collections-new-label {
-    @include icon-content($icon-collections-new-label);
-}
-.icon-collections-sort-by-size {
-    @include icon-content($icon-collections-sort-by-size);
-}
-.icon-collections-view-as-grid {
-    @include icon-content($icon-collections-view-as-grid);
-}
-.icon-collections-view-as-list {
-    @include icon-content($icon-collections-view-as-list);
-}
-.icon-content-attachment {
-    @include icon-content($icon-content-attachment);
-}
-.icon-content-backspace {
-    @include icon-content($icon-content-backspace);
-}
-.icon-content-copy {
-    @include icon-content($icon-content-copy);
-}
-.icon-content-cut {
-    @include icon-content($icon-content-cut);
-}
-.icon-content-discard {
-    @include icon-content($icon-content-discard);
-}
-.icon-content-edit {
-    @include icon-content($icon-content-edit);
-}
-.icon-content-email {
-    @include icon-content($icon-content-email);
-}
-.icon-content-event {
-    @include icon-content($icon-content-event);
-}
-.icon-content-import-export {
-    @include icon-content($icon-content-import-export);
-}
-.icon-content-merge {
-    @include icon-content($icon-content-merge);
-}
-.icon-content-new {
-    @include icon-content($icon-content-new);
-}
-.icon-content-new-attachment {
-    @include icon-content($icon-content-new-attachment);
-}
-.icon-content-new-email {
-    @include icon-content($icon-content-new-email);
-}
-.icon-content-new-event {
-    @include icon-content($icon-content-new-event);
-}
-.icon-content-new-picture {
-    @include icon-content($icon-content-new-picture);
-}
-.icon-content-paste {
-    @include icon-content($icon-content-paste);
-}
-.icon-content-picture {
-    @include icon-content($icon-content-picture);
-}
-.icon-content-read {
-    @include icon-content($icon-content-read);
-}
-.icon-content-remove {
-    @include icon-content($icon-content-remove);
-}
-.icon-content-save {
-    @include icon-content($icon-content-save);
-}
-.icon-content-select-all {
-    @include icon-content($icon-content-select-all);
-}
-.icon-content-split {
-    @include icon-content($icon-content-split);
-}
-.icon-content-undo {
-    @include icon-content($icon-content-undo);
-}
-.icon-content-unread {
-    @include icon-content($icon-content-unread);
-}
-.icon-social-add-group {
-    @include icon-content($icon-social-add-group);
-}
-.icon-social-add-person {
-    @include icon-content($icon-social-add-person);
-}
-.icon-social-cc-bcc {
-    @include icon-content($icon-social-cc-bcc);
-}
-.icon-social-chat {
-    @include icon-content($icon-social-chat);
-}
-.icon-social-forward {
-    @include icon-content($icon-social-forward);
-}
-.icon-social-group {
-    @include icon-content($icon-social-group);
-}
-.icon-social-person {
-    @include icon-content($icon-social-person);
-}
-.icon-social-reply {
-    @include icon-content($icon-social-reply);
-}
-.icon-social-reply-all {
-    @include icon-content($icon-social-reply-all);
-}
-.icon-social-send-now {
-    @include icon-content($icon-social-send-now);
-}
-.icon-social-share {
-    @include icon-content($icon-social-share);
-}
-.icon-location-directions {
-    @include icon-content($icon-location-directions);
-}
-.icon-location-map {
-    @include icon-content($icon-location-map);
-}
-.icon-location-place {
-    @include icon-content($icon-location-place);
-}
-.icon-location-web-site {
-    @include icon-content($icon-location-web-site);
-}
-.icon-images-crop {
-    @include icon-content($icon-images-crop);
-}
-.icon-images-rotate-left {
-    @include icon-content($icon-images-rotate-left);
-}
-.icon-images-rotate-right {
-    @include icon-content($icon-images-rotate-right);
-}
-.icon-images-slideshow {
-    @include icon-content($icon-images-slideshow);
-}
-.icon-av-add-to-queue {
-    @include icon-content($icon-av-add-to-queue);
-}
-.icon-av-download {
-    @include icon-content($icon-av-download);
-}
-.icon-av-fast-forward {
-    @include icon-content($icon-av-fast-forward);
-}
-.icon-av-full-screen {
-    @include icon-content($icon-av-full-screen);
-}
-.icon-av-make-available-offline {
-    @include icon-content($icon-av-make-available-offline);
-}
-.icon-av-next {
-    @include icon-content($icon-av-next);
-}
-.icon-av-pause {
-    @include icon-content($icon-av-pause);
-}
-.icon-av-pause-over-video {
-    @include icon-content($icon-av-pause-over-video);
-}
-.icon-av-play {
-    @include icon-content($icon-av-play);
-}
-.icon-av-play-over-video {
-    @include icon-content($icon-av-play-over-video);
-}
-.icon-av-previous {
-    @include icon-content($icon-av-previous);
-}
-.icon-av-repeat {
-    @include icon-content($icon-av-repeat);
-}
-.icon-av-replay {
-    @include icon-content($icon-av-replay);
-}
-.icon-av-return-from-full-screen {
-    @include icon-content($icon-av-return-from-full-screen);
-}
-.icon-av-rewind {
-    @include icon-content($icon-av-rewind);
-}
-.icon-av-shuffle {
-    @include icon-content($icon-av-shuffle);
-}
-.icon-av-stop {
-    @include icon-content($icon-av-stop);
-}
-.icon-av-upload {
-    @include icon-content($icon-av-upload);
-}
-.icon-device-access-accounts {
-    @include icon-content($icon-device-access-accounts);
-}
-.icon-device-access-add-alarm {
-    @include icon-content($icon-device-access-add-alarm);
-}
-.icon-device-access-alarms {
-    @include icon-content($icon-device-access-alarms);
-}
-.icon-device-access-battery {
-    @include icon-content($icon-device-access-battery);
-}
-.icon-device-access-bightness-low {
-    @include icon-content($icon-device-access-bightness-low);
-}
-.icon-device-access-bluetooth {
-    @include icon-content($icon-device-access-bluetooth);
-}
-.icon-device-access-bluetooth-connected {
-    @include icon-content($icon-device-access-bluetooth-connected);
-}
-.icon-device-access-bluetooth-searching {
-    @include icon-content($icon-device-access-bluetooth-searching);
-}
-.icon-device-access-brightness-auto {
-    @include icon-content($icon-device-access-brightness-auto);
-}
-.icon-device-access-brightness-high {
-    @include icon-content($icon-device-access-brightness-high);
-}
-.icon-device-access-brightness-medium {
-    @include icon-content($icon-device-access-brightness-medium);
-}
-.icon-device-access-call {
-    @include icon-content($icon-device-access-call);
-}
-.icon-device-access-camera {
-    @include icon-content($icon-device-access-camera);
-}
-.icon-device-access-data-usage {
-    @include icon-content($icon-device-access-data-usage);
-}
-.icon-device-access-dial-pad {
-    @include icon-content($icon-device-access-dial-pad);
-}
-.icon-device-access-end-call {
-    @include icon-content($icon-device-access-end-call);
-}
-.icon-device-access-flash-automatic {
-    @include icon-content($icon-device-access-flash-automatic);
-}
-.icon-device-access-flash-off {
-    @include icon-content($icon-device-access-flash-off);
-}
-.icon-device-access-flash-on {
-    @include icon-content($icon-device-access-flash-on);
-}
-.icon-device-access-location-found {
-    @include icon-content($icon-device-access-location-found);
-}
-.icon-device-access-location-off {
-    @include icon-content($icon-device-access-location-off);
-}
-.icon-device-access-location-searching {
-    @include icon-content($icon-device-access-location-searching);
-}
-.icon-device-access-mic {
-    @include icon-content($icon-device-access-mic);
-}
-.icon-device-access-mic-muted {
-    @include icon-content($icon-device-access-mic-muted);
-}
-.icon-device-access-network-cell {
-    @include icon-content($icon-device-access-network-cell);
-}
-.icon-device-access-network-wifi {
-    @include icon-content($icon-device-access-network-wifi);
-}
-.icon-device-access-new-account {
-    @include icon-content($icon-device-access-new-account);
-}
-.icon-device-access-not-secure {
-    @include icon-content($icon-device-access-not-secure);
-}
-.icon-device-access-ring-volume {
-    @include icon-content($icon-device-access-ring-volume);
-}
-.icon-device-access-screen-locked-to-landscape {
-    @include icon-content($icon-device-access-screen-locked-to-landscape);
-}
-.icon-device-access-screen-locked-to-portrait {
-    @include icon-content($icon-device-access-screen-locked-to-portrait);
-}
-.icon-device-access-screen-rotation {
-    @include icon-content($icon-device-access-screen-rotation);
-}
-.icon-device-access-sd-storage {
-    @include icon-content($icon-device-access-sd-storage);
-}
-.icon-device-access-secure {
-    @include icon-content($icon-device-access-secure);
-}
-.icon-device-access-storage {
-    @include icon-content($icon-device-access-storage);
-}
-.icon-device-access-switch-camera {
-    @include icon-content($icon-device-access-switch-camera);
-}
-.icon-device-access-switch-video {
-    @include icon-content($icon-device-access-switch-video);
-}
-.icon-device-access-time {
-    @include icon-content($icon-device-access-time);
-}
-.icon-device-access-usb {
-    @include icon-content($icon-device-access-usb);
-}
-.icon-device-access-video {
-    @include icon-content($icon-device-access-video);
-}
-.icon-device-access-volume-muted {
-    @include icon-content($icon-device-access-volume-muted);
-}
-.icon-device-access-volume-on {
-    @include icon-content($icon-device-access-volume-on);
-}
-.icon-alerts-and-states-airplane-mode-off {
-    @include icon-content($icon-alerts-and-states-airplane-mode-off);
-}
-.icon-alerts-and-states-airplane-mode-on {
-    @include icon-content($icon-alerts-and-states-airplane-mode-on);
-}
-.icon-alerts-and-states-error {
-    @include icon-content($icon-alerts-and-states-error);
-}
-.icon-alerts-and-states-warning {
-    @include icon-content($icon-alerts-and-states-warning);
-}
-.icon-hardware-computer {
-    @include icon-content($icon-hardware-computer);
-}
-.icon-hardware-dock {
-    @include icon-content($icon-hardware-dock);
-}
-.icon-hardware-gamepad {
-    @include icon-content($icon-hardware-gamepad);
-}
-.icon-hardware-headphones {
-    @include icon-content($icon-hardware-headphones);
-}
-.icon-hardware-headset {
-    @include icon-content($icon-hardware-headset);
-}
-.icon-hardware-keyboard {
-    @include icon-content($icon-hardware-keyboard);
-}
-.icon-hardware-mouse {
-    @include icon-content($icon-hardware-mouse);
-}
-.icon-hardware-phone {
-    @include icon-content($icon-hardware-phone);
-}
+    icon-action-about $icon-action-about,
+    icon-action-help $icon-action-help,
+    icon-action-search $icon-action-search,
+    icon-action-settings $icon-action-settings,
+    icon-rating-bad $icon-rating-bad,
+    icon-rating-favorite $icon-rating-favorite,
+    icon-rating-good $icon-rating-good,
+    icon-rating-half-important $icon-rating-half-important,
+    icon-rating-important $icon-rating-important,
+    icon-rating-not-important $icon-rating-not-important,
+
+    icon-collections-cloud $icon-collections-cloud,
+    icon-collections-collection $icon-collections-collection,
+    icon-collections-go-to-today $icon-collections-go-to-today,
+    icon-collections-labels $icon-collections-labels,
+    icon-collections-new-label $icon-collections-new-label,
+    icon-collections-sort-by-size $icon-collections-sort-by-size,
+    icon-collections-view-as-grid $icon-collections-view-as-grid,
+    icon-collections-view-as-list $icon-collections-view-as-list,
+
+    icon-content-attachment $icon-content-attachment,
+    icon-content-backspace $icon-content-backspace,
+    icon-content-copy $icon-content-copy,
+    icon-content-cut $icon-content-cut,
+    icon-content-discard $icon-content-discard,
+    icon-content-edit $icon-content-edit,
+    icon-content-email $icon-content-email,
+    icon-content-event $icon-content-event,
+    icon-content-import-export $icon-content-import-export,
+    icon-content-merge $icon-content-merge,
+    icon-content-new $icon-content-new,
+    icon-content-new-attachment $icon-content-new-attachment,
+    icon-content-new-email $icon-content-new-email,
+    icon-content-new-event $icon-content-new-event,
+    icon-content-new-picture $icon-content-new-picture,
+    icon-content-paste $icon-content-paste,
+    icon-content-picture $icon-content-picture,
+    icon-content-read $icon-content-read,
+    icon-content-remove $icon-content-remove,
+    icon-content-save $icon-content-save,
+    icon-content-select-all $icon-content-select-all,
+    icon-content-split $icon-content-split,
+    icon-content-undo $icon-content-undo,
+    icon-content-unread $icon-content-unread,
+
+    icon-social-add-group $icon-social-add-group,
+    icon-social-add-person $icon-social-add-person,
+    icon-social-cc-bcc $icon-social-cc-bcc,
+    icon-social-chat $icon-social-chat,
+    icon-social-forward $icon-social-forward,
+    icon-social-group $icon-social-group,
+    icon-social-person $icon-social-person,
+    icon-social-reply $icon-social-reply,
+    icon-social-reply-all $icon-social-reply-all,
+    icon-social-send-now $icon-social-send-now,
+    icon-social-share $icon-social-share,
+
+    icon-location-directions $icon-location-directions,
+    icon-location-map $icon-location-map,
+    icon-location-place $icon-location-place,
+    icon-location-web-site $icon-location-web-site,
+
+    icon-images-crop $icon-images-crop,
+    icon-images-rotate-left $icon-images-rotate-left,
+    icon-images-rotate-right $icon-images-rotate-right,
+    icon-images-slideshow $icon-images-slideshow,
+
+    icon-av-add-to-queue $icon-av-add-to-queue,
+    icon-av-download $icon-av-download,
+    icon-av-fast-forward $icon-av-fast-forward,
+    icon-av-full-screen $icon-av-full-screen,
+    icon-av-make-available-offline $icon-av-make-available-offline,
+    icon-av-next $icon-av-next,
+    icon-av-pause $icon-av-pause,
+    icon-av-pause-over-video $icon-av-pause-over-video,
+    icon-av-play $icon-av-play,
+    icon-av-play-over-video $icon-av-play-over-video,
+    icon-av-previous $icon-av-previous,
+    icon-av-repeat $icon-av-repeat,
+    icon-av-replay $icon-av-replay,
+    icon-av-return-from-full-screen $icon-av-return-from-full-screen,
+    icon-av-rewind $icon-av-rewind,
+    icon-av-shuffle $icon-av-shuffle,
+    icon-av-stop $icon-av-stop,
+    icon-av-upload $icon-av-upload,
+
+    icon-device-access-accounts $icon-device-access-accounts,
+    icon-device-access-add-alarm $icon-device-access-add-alarm,
+    icon-device-access-alarms $icon-device-access-alarms,
+    icon-device-access-battery $icon-device-access-battery,
+    icon-device-access-bightness-low $icon-device-access-bightness-low,
+    icon-device-access-bluetooth $icon-device-access-bluetooth,
+    icon-device-access-bluetooth-connected $icon-device-access-bluetooth-connected,
+    icon-device-access-bluetooth-searching $icon-device-access-bluetooth-searching,
+    icon-device-access-brightness-auto $icon-device-access-brightness-auto,
+    icon-device-access-brightness-high $icon-device-access-brightness-high,
+    icon-device-access-brightness-medium $icon-device-access-brightness-medium,
+    icon-device-access-call $icon-device-access-call,
+    icon-device-access-camera $icon-device-access-camera,
+    icon-device-access-data-usage $icon-device-access-data-usage,
+    icon-device-access-dial-pad $icon-device-access-dial-pad,
+    icon-device-access-end-call $icon-device-access-end-call,
+    icon-device-access-flash-automatic $icon-device-access-flash-automatic,
+    icon-device-access-flash-off $icon-device-access-flash-off,
+    icon-device-access-flash-on $icon-device-access-flash-on,
+    icon-device-access-location-found $icon-device-access-location-found,
+    icon-device-access-location-off $icon-device-access-location-off,
+    icon-device-access-location-searching $icon-device-access-location-searching,
+    icon-device-access-mic $icon-device-access-mic,
+    icon-device-access-mic-muted $icon-device-access-mic-muted,
+    icon-device-access-network-cell $icon-device-access-network-cell,
+    icon-device-access-network-wifi $icon-device-access-network-wifi,
+    icon-device-access-new-account $icon-device-access-new-account,
+    icon-device-access-not-secure $icon-device-access-not-secure,
+    icon-device-access-ring-volume $icon-device-access-ring-volume,
+    icon-device-access-screen-locked-to-landscape $icon-device-access-screen-locked-to-landscape,
+    icon-device-access-screen-locked-to-portrait $icon-device-access-screen-locked-to-portrait,
+    icon-device-access-screen-rotation $icon-device-access-screen-rotation,
+    icon-device-access-sd-storage $icon-device-access-sd-storage,
+    icon-device-access-secure $icon-device-access-secure,
+    icon-device-access-storage $icon-device-access-storage,
+    icon-device-access-switch-camera $icon-device-access-switch-camera,
+    icon-device-access-switch-video $icon-device-access-switch-video,
+    icon-device-access-time $icon-device-access-time,
+    icon-device-access-usb $icon-device-access-usb,
+    icon-device-access-video $icon-device-access-video,
+    icon-device-access-volume-muted $icon-device-access-volume-muted,
+    icon-device-access-volume-on $icon-device-access-volume-on,
+
+    icon-alerts-and-states-airplane-mode-off $icon-alerts-and-states-airplane-mode-off,
+    icon-alerts-and-states-airplane-mode-on $icon-alerts-and-states-airplane-mode-on,
+    icon-alerts-and-states-error $icon-alerts-and-states-error,
+    icon-alerts-and-states-warning $icon-alerts-and-states-warning,
+
+    icon-hardware-computer $icon-hardware-computer,
+    icon-hardware-dock $icon-hardware-dock,
+    icon-hardware-gamepad $icon-hardware-gamepad,
+    icon-hardware-headphones $icon-hardware-headphones,
+    icon-hardware-headset $icon-hardware-headset,
+    icon-hardware-keyboard $icon-hardware-keyboard,
+    icon-hardware-mouse $icon-hardware-mouse,
+    icon-hardware-phone $icon-hardware-phone
+;
+
+@each $icon in $icons {
+    .#{nth($icon, 1)}:before {
+        content: nth($icon, 2);
+    }
+};
+
