@@ -1,7 +1,11 @@
 @import "compass/css3/font-face";
 
+// Font familly
+$font-name: 'Android-Action-Bar-Icon-Pack';
+
+// Font Face
 @include font-face(
-    'Android-Action-Bar-Icon-Pack',
+    $font-name,
     font-files(
         'Android-Action-Bar-Icon-Pack.eot',
         'Android-Action-Bar-Icon-Pack.svg',
@@ -13,9 +17,9 @@
     normal
 );
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
+// Use the following CSS code if you want to use data attributes for inserting your icons
 [data-icon]:before {
-    font-family: 'Android-Action-Bar-Icon-Pack';
+    font-family: $font-name;
     content: attr(data-icon);
     speak: none;
     font-weight: normal;
@@ -23,15 +27,16 @@
     -webkit-font-smoothing: antialiased;
 }
 
-/* Use the following CSS code if you want to have a class per icon */
+// Use the following CSS code if you want to have a class per icon
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: 'Android-Action-Bar-Icon-Pack';
+    font-family: $font-name;
     font-style: normal;
     speak: none;
     font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
+
 .icon-navigation-back:before {
     content: "\e001";
 }
