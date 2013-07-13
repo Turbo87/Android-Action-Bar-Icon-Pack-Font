@@ -19,7 +19,7 @@ Conversion
 
 The conversion was done with the IcoMoon app at <http://icomoon.io/app/>
 
-Attribution
------------
+License and Attribution
+-----------------------
 
-Portions of this page are modifications based on work created and [shared by the Android Open Source Project](http://code.google.com/policies.html) and used according to terms described in the [Creative Commons 2.5 Attribution License](http://creativecommons.org/licenses/by/2.5/).
+Portions of this page are modifications based on work created and [shared by the Android Open Source Project](http://code.google.com/policies.html) and used according to terms described in the [Creative Commons 2.5 Attribution License](http://creativecommons.org/licenses/by/2.5/). Just like the original icon set this derivative work is also licensed under the CC-BY-2.5 license.
