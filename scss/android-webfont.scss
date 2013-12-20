@@ -1,0 +1,202 @@
+@import "compass/css3/font-face";
+@import "utf8-map";
+
+// Font familly
+$font-name: 'Android-Action-Bar-Icon-Pack';
+
+// Font Face
+@include font-face(
+    $font-name,
+    font-files(
+        'Android-Action-Bar-Icon-Pack.eot',
+        'Android-Action-Bar-Icon-Pack.svg',
+        'Android-Action-Bar-Icon-Pack.ttf',
+        'Android-Action-Bar-Icon-Pack.woff'
+    ),
+    'Android-Action-Bar-Icon-Pack.eot',
+    normal,
+    normal
+);
+
+@mixin use-font {
+    font-family: $font-name;
+    speak: none;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Use the following CSS code if you want to use data attributes for inserting your icons
+[data-icon]:before {
+    @include use-font;
+    content: attr(data-icon);
+}
+
+// Use the following CSS code if you want to have a class per icon
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    @include use-font;
+}
+
+// Icons list
+$icons:
+    icon-navigation-back $icon-navigation-back,
+    icon-navigation-accept $icon-navigation-accept,
+    icon-navigation-cancel $icon-navigation-cancel,
+    icon-navigation-collapse $icon-navigation-collapse,
+    icon-navigation-expand $icon-navigation-expand,
+    icon-navigation-forward $icon-navigation-forward,
+    icon-navigation-next-item $icon-navigation-next-item,
+    icon-navigation-previous-item $icon-navigation-previous-item,
+    icon-navigation-refresh $icon-navigation-refresh,
+
+    icon-action-about $icon-action-about,
+    icon-action-help $icon-action-help,
+    icon-action-search $icon-action-search,
+    icon-action-settings $icon-action-settings,
+    icon-rating-bad $icon-rating-bad,
+    icon-rating-favorite $icon-rating-favorite,
+    icon-rating-good $icon-rating-good,
+    icon-rating-half-important $icon-rating-half-important,
+    icon-rating-important $icon-rating-important,
+    icon-rating-not-important $icon-rating-not-important,
+
+    icon-collections-cloud $icon-collections-cloud,
+    icon-collections-collection $icon-collections-collection,
+    icon-collections-go-to-today $icon-collections-go-to-today,
+    icon-collections-labels $icon-collections-labels,
+    icon-collections-new-label $icon-collections-new-label,
+    icon-collections-sort-by-size $icon-collections-sort-by-size,
+    icon-collections-view-as-grid $icon-collections-view-as-grid,
+    icon-collections-view-as-list $icon-collections-view-as-list,
+
+    icon-content-attachment $icon-content-attachment,
+    icon-content-backspace $icon-content-backspace,
+    icon-content-copy $icon-content-copy,
+    icon-content-cut $icon-content-cut,
+    icon-content-discard $icon-content-discard,
+    icon-content-edit $icon-content-edit,
+    icon-content-email $icon-content-email,
+    icon-content-event $icon-content-event,
+    icon-content-import-export $icon-content-import-export,
+    icon-content-merge $icon-content-merge,
+    icon-content-new $icon-content-new,
+    icon-content-new-attachment $icon-content-new-attachment,
+    icon-content-new-email $icon-content-new-email,
+    icon-content-new-event $icon-content-new-event,
+    icon-content-new-picture $icon-content-new-picture,
+    icon-content-paste $icon-content-paste,
+    icon-content-picture $icon-content-picture,
+    icon-content-read $icon-content-read,
+    icon-content-remove $icon-content-remove,
+    icon-content-save $icon-content-save,
+    icon-content-select-all $icon-content-select-all,
+    icon-content-split $icon-content-split,
+    icon-content-undo $icon-content-undo,
+    icon-content-unread $icon-content-unread,
+
+    icon-social-add-group $icon-social-add-group,
+    icon-social-add-person $icon-social-add-person,
+    icon-social-cc-bcc $icon-social-cc-bcc,
+    icon-social-chat $icon-social-chat,
+    icon-social-forward $icon-social-forward,
+    icon-social-group $icon-social-group,
+    icon-social-person $icon-social-person,
+    icon-social-reply $icon-social-reply,
+    icon-social-reply-all $icon-social-reply-all,
+    icon-social-send-now $icon-social-send-now,
+    icon-social-share $icon-social-share,
+
+    icon-location-directions $icon-location-directions,
+    icon-location-map $icon-location-map,
+    icon-location-place $icon-location-place,
+    icon-location-web-site $icon-location-web-site,
+
+    icon-images-crop $icon-images-crop,
+    icon-images-rotate-left $icon-images-rotate-left,
+    icon-images-rotate-right $icon-images-rotate-right,
+    icon-images-slideshow $icon-images-slideshow,
+
+    icon-av-add-to-queue $icon-av-add-to-queue,
+    icon-av-download $icon-av-download,
+    icon-av-fast-forward $icon-av-fast-forward,
+    icon-av-full-screen $icon-av-full-screen,
+    icon-av-make-available-offline $icon-av-make-available-offline,
+    icon-av-next $icon-av-next,
+    icon-av-pause $icon-av-pause,
+    icon-av-pause-over-video $icon-av-pause-over-video,
+    icon-av-play $icon-av-play,
+    icon-av-play-over-video $icon-av-play-over-video,
+    icon-av-previous $icon-av-previous,
+    icon-av-repeat $icon-av-repeat,
+    icon-av-replay $icon-av-replay,
+    icon-av-return-from-full-screen $icon-av-return-from-full-screen,
+    icon-av-rewind $icon-av-rewind,
+    icon-av-shuffle $icon-av-shuffle,
+    icon-av-stop $icon-av-stop,
+    icon-av-upload $icon-av-upload,
+
+    icon-device-access-accounts $icon-device-access-accounts,
+    icon-device-access-add-alarm $icon-device-access-add-alarm,
+    icon-device-access-alarms $icon-device-access-alarms,
+    icon-device-access-battery $icon-device-access-battery,
+    icon-device-access-bightness-low $icon-device-access-bightness-low,
+    icon-device-access-bluetooth $icon-device-access-bluetooth,
+    icon-device-access-bluetooth-connected $icon-device-access-bluetooth-connected,
+    icon-device-access-bluetooth-searching $icon-device-access-bluetooth-searching,
+    icon-device-access-brightness-auto $icon-device-access-brightness-auto,
+    icon-device-access-brightness-high $icon-device-access-brightness-high,
+    icon-device-access-brightness-medium $icon-device-access-brightness-medium,
+    icon-device-access-call $icon-device-access-call,
+    icon-device-access-camera $icon-device-access-camera,
+    icon-device-access-data-usage $icon-device-access-data-usage,
+    icon-device-access-dial-pad $icon-device-access-dial-pad,
+    icon-device-access-end-call $icon-device-access-end-call,
+    icon-device-access-flash-automatic $icon-device-access-flash-automatic,
+    icon-device-access-flash-off $icon-device-access-flash-off,
+    icon-device-access-flash-on $icon-device-access-flash-on,
+    icon-device-access-location-found $icon-device-access-location-found,
+    icon-device-access-location-off $icon-device-access-location-off,
+    icon-device-access-location-searching $icon-device-access-location-searching,
+    icon-device-access-mic $icon-device-access-mic,
+    icon-device-access-mic-muted $icon-device-access-mic-muted,
+    icon-device-access-network-cell $icon-device-access-network-cell,
+    icon-device-access-network-wifi $icon-device-access-network-wifi,
+    icon-device-access-new-account $icon-device-access-new-account,
+    icon-device-access-not-secure $icon-device-access-not-secure,
+    icon-device-access-ring-volume $icon-device-access-ring-volume,
+    icon-device-access-screen-locked-to-landscape $icon-device-access-screen-locked-to-landscape,
+    icon-device-access-screen-locked-to-portrait $icon-device-access-screen-locked-to-portrait,
+    icon-device-access-screen-rotation $icon-device-access-screen-rotation,
+    icon-device-access-sd-storage $icon-device-access-sd-storage,
+    icon-device-access-secure $icon-device-access-secure,
+    icon-device-access-storage $icon-device-access-storage,
+    icon-device-access-switch-camera $icon-device-access-switch-camera,
+    icon-device-access-switch-video $icon-device-access-switch-video,
+    icon-device-access-time $icon-device-access-time,
+    icon-device-access-usb $icon-device-access-usb,
+    icon-device-access-video $icon-device-access-video,
+    icon-device-access-volume-muted $icon-device-access-volume-muted,
+    icon-device-access-volume-on $icon-device-access-volume-on,
+
+    icon-alerts-and-states-airplane-mode-off $icon-alerts-and-states-airplane-mode-off,
+    icon-alerts-and-states-airplane-mode-on $icon-alerts-and-states-airplane-mode-on,
+    icon-alerts-and-states-error $icon-alerts-and-states-error,
+    icon-alerts-and-states-warning $icon-alerts-and-states-warning,
+
+    icon-hardware-computer $icon-hardware-computer,
+    icon-hardware-dock $icon-hardware-dock,
+    icon-hardware-gamepad $icon-hardware-gamepad,
+    icon-hardware-headphones $icon-hardware-headphones,
+    icon-hardware-headset $icon-hardware-headset,
+    icon-hardware-keyboard $icon-hardware-keyboard,
+    icon-hardware-mouse $icon-hardware-mouse,
+    icon-hardware-phone $icon-hardware-phone
+;
+
+@each $icon in $icons {
+    .#{nth($icon, 1)}:before {
+        content: nth($icon, 2);
+    }
+};
+
